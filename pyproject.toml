@@ -1,0 +1,22 @@
+[tool.poetry]
+name = 'forgit'
+version = '0.1.0'
+description = 'Tool that automatically git commits to repo every 24hrs if tracked files have changed'
+authors = ['roboto84 <7658704+roboto84@users.noreply.github.com>']
+
+[tool.poetry.dependencies]
+python = '^3.10'
+termcolor= '^1.1.0'
+halo='^0.0.31'
+schedule = '^1.1.0'
+loguru = '^0.6.0'
+
+[tool.poetry.dev-dependencies]
+pytest = '^6.2.5'
+
+[build-system]
+requires = ['poetry-core>=1.0.0']
+build-backend = 'poetry.core.masonry.api'
+
+[tool.poetry.scripts]
+forgit = "forgit.main:run_forgit"

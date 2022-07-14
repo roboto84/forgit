@@ -9,7 +9,7 @@ def run_forgit():
     configure_logging()
     defaults: BaseValues = {
         'directory': './',
-        'check_git_interval': {'quantity': 1, 'unit': Unit.HOUR},
+        'check_git_interval': {'quantity': 24, 'unit': Unit.HOUR},
         'commit_message': 'auto-commit'
     }
 
